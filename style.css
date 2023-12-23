@@ -1,0 +1,506 @@
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.navbar {
+    background-color: navy;
+}
+.navbar-brand {
+    margin-right: 30px;
+}
+.nav-link:hover {
+    text-decoration: solid cadetblue underline;
+}
+.for-background {
+    background-color: rgb(33, 33, 148);
+}
+
+.form-inline {
+    padding-bottom: 30px;
+}
+
+.container-center {
+    display: flex;
+    padding-top: 10px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.container-for-img-result {
+    background: linear-gradient(rgb(173, 189, 241), #adb3f5,rgb(206, 216, 248));
+    /* margin-top: 30px; */
+}
+
+.img-size {
+    padding: 5px;
+    /* width: fit-content;
+    height: fit-content; */
+    max-width: 300px;
+    max-height: 350px;
+
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 16px rgb(59, 59, 59);
+
+}
+
+.img-div a {
+    color: navy;
+}
+
+.result-img,.result-imgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#search-input {
+    width: 380px;
+}
+
+.img-div {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    border-radius: 12px;
+    padding: 2px;
+}
+.img-divs {
+    margin: 20px;
+}
+
+.img-div a { 
+    text-decoration: none;
+
+}
+
+.img-info {
+   margin-left: 10px;
+   margin-top: 10px;
+   max-width: 250px;
+   color: white;
+}
+#my-showMore-btn {
+    margin: auto;
+    text-align: center;
+    padding: 4px ;
+    border-radius: 6px;
+    width:150px;
+    cursor: pointer;
+    background: linear-gradient(navy,rgb(79, 79, 220),rgb(81, 81, 178),rgb(127, 127, 202));
+    display: none;
+    color: white;
+    box-shadow: 3px 5px 27px black;
+    
+}
+#my-showMore-btn:active {
+    transform: translateY(2px);
+}
+
+.p_thank {
+    visibility: hidden;
+  } 
+  .overly {
+    margin-left: 58vw;
+    cursor: pointer;
+    color: white;
+}  
+
+/* some more css for responsiveness */
+@media (max-width:600px) {
+
+    .img-div {
+        margin: 10px;
+    }
+    .yashBtn {
+        margin: auto;
+    }
+    .form_right {
+        display: none;
+    }
+    .container-center {
+        display: flex;
+        padding-top: 10px;
+        justify-content: center;
+        margin-top: 15px;
+    }
+    .my-info-text {
+        max-width: 70vw;
+    }
+    .overly {
+        margin-left: 70vw;
+        cursor: pointer;
+        color: white;
+    }
+
+    
+}
+@media (max-width:900px) {
+
+    .p_thank {
+        position: relative;
+        visibility: visible;
+        padding-top : 70px;
+        margin: auto;
+        text-align: center;
+        
+        font-size: 15px;
+        color: white;
+    }  
+    
+.form-inline {
+    padding-bottom: 0;
+    padding-left: 0;
+    
+}
+#search-input {
+    margin-left: 20px;
+}
+
+
+.div-for-flex-for-img-word-meaning {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+}
+@media (max-width:1400px) {
+    .form_right {
+        position: relative;
+        margin-left: 200px;
+    }
+    .nav-link {
+        font-size: 15px;
+        margin-right: 20px;
+    }
+    
+    
+    
+}
+
+
+.form_right {
+    position: relative;
+    margin-left: 400px;
+}
+
+.footer-part {
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    background-color:navy ;
+    height: 90px;
+    padding-top: 20px;
+    color: white;
+}
+.footer-part p {
+    margin-bottom: -5px;
+}
+.loader {
+    border: 8px solid #f3f3f3; /* Light grey */
+    border-top: 8px solid black; /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spining 2s linear ;
+
+  }
+  
+  @keyframes spining {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .yash-fix {
+    position: fixed;
+    width: 100vw;
+  }
+#yash-end-clr-prblm a  {
+    text-decoration: none;
+    
+}
+   
+.work {
+    height: fit-content;
+    width: fit-content;
+    background-color: aqua;
+}
+#your-works {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    flex-direction: row;
+}
+
+#search-name {
+    margin-right:15px;
+}
+
+
+/* css for pop up container */
+
+.containersk3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 0rem;
+    padding: 1rem;
+  }
+  
+  .sk3 {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem 2rem;
+    background:#FFFF33;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2), 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+  }
+  
+  .sk3 > img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 600/300;
+  }
+  
+  .sk3 > h6 {
+    margin-top: 1rem;
+    font-family: "Kalam", cursive;
+    font-weight: normal;
+    font-size:20px;
+    
+    text-align: center;
+  }
+  
+  .sk3 > p {
+    font-family: "Kalam", cursive;
+    font-size: 1rem;
+  
+    text-align: center;
+  }
+  
+  
+  .sk8{
+      
+      background-color:#4d1f1f;
+      color:#FFFFFF;
+  }
+  .sk9{
+      
+      background-color:#ffc523;
+      color:black;
+  }
+  .txt{
+      
+      
+       text-align: justify;
+    text-justify: inter-word;
+  }
+  .sk9 > p{
+      
+      
+        color:black;
+  }
+  .sk8 > p{
+      
+      
+      color:white;
+  
+  }
+  
+  
+  
+  
+  
+  .sk8 > h6 {
+      
+      color:white;
+  }
+  
+  .sk9 > h6 {
+      
+      color:black;
+  }
+  
+  
+  @media only screen and (max-width:421px) {
+    .containersk3 {
+      display:none;
+    }
+  }
+  @media only screen and (min-width:420px) {
+    .sk55 {
+      display:none;
+    }
+  }
+  
+  @media only screen and (max-width:500px) {
+    .img66 {
+      display:block;
+    }
+  }
+  
+  
+  .aboutmore{
+      
+      background-color:red;
+  }
+  
+  
+  .modalbox {
+      min-width: 100%;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(81, 51, 51, 0.5);
+      z-index: 99999;
+      pointer-events: auto;
+      display:none;
+      overflow-y:auto;
+      -webkit-overflow-scrolling: touch;
+  }
+  .modalbox >.dialog {
+      max-width: 100%;
+      position: relative;
+      top: 10px;
+      margin: 5% 10%;
+  
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      background: #ffffff;
+      box-shadow: 0 0 10px #000000;
+      -moz-box-shadow: 0 0 10px #000000;
+      -webkit-box-shadow: 0 0 10px #000000;
+      display:block;
+      pointer-events: auto;
+      
+  }
+  
+  .closebutton {
+      float: right;
+      font-size: 21px;
+      font-weight: 700;
+      background-color: transparent;
+      line-height: 1;
+      color: #000;
+      text-shadow: 0 1px 0 #fff;
+      filter: alpha(opacity=20);
+      opacity: .6;
+      z-index: 9999;
+      border: none;
+    cursor:pointer
+  }
+  .ab77{
+      position:relative;
+      width:200px;
+      height:200px;
+      border-radius:20px;
+      margin-top:20px;
+  }
+  .ab100{
+      
+      color:#964B00
+  ;
+  }
+  .ab33{
+      text-align:center;
+  }
+  .ab55{
+      border-radius:60px;
+      margin:20px; 
+  }
+
+#searchEle {
+    margin-left: 10px;
+    background-color: transparent;
+}
+ 
+a:not([href]) {
+    color: white;
+}
+.btn-cross {
+    border: none;
+    background-color: transparent;
+}
+
+.myself_img {
+    border-radius: 50%;
+}
+.div-for-flex-for-img-word-meaning {
+    display: flex;
+    justify-content: space-around;
+}
+ 
+.form-input-taking {
+    position: relative;
+    margin-top: 20px;
+    align-items: center;
+    display: flex;
+ 
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.form-input-taking input {
+    width: 250px;
+    margin-right: 30px;
+    border: 1px solid #000;
+
+}
+.form-input-taking input::placeholder {
+    color:black ;
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.meaningSearchBtn {
+    color: #000;
+    background-color: #adb3f5;
+}
+.for-result {
+    display: flex;
+    justify-content: center;
+    margin-left: 4vw;
+}
+ 
+.that-word {
+    display: flex;
+    height: 70px;
+    align-items: center;
+}
+.that-word h3 {
+    margin-right: 20vw;
+}
+.defination {
+max-width: 70vw;
+}
+.my-info-text {
+    max-width: 30vw;
+    margin-right: 10px;
+}
+@media (max-width:500px) {
+    .my-info-text {
+        max-width: 75vw;
+    }
+}
+
+
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(110, 110, 238);
+    display: none;
+    border-radius: 50%;
+    box-shadow: 7px 7px 20px black;
+    border: none;
+  }
+  .spinner-border {
+
+    display: none;
+  }
